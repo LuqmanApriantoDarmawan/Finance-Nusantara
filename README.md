@@ -1,6 +1,6 @@
-# Sistem Akuntansi Indonesia
+# Finsera
 
-Aplikasi web akuntansi modern yang dirancang khusus untuk membantu usaha kecil dan menengah (UKM) di Indonesia mengelola keuangan mereka dengan mudah dan efisien.
+Finsera merupakan singkatan dari Finance Nusantara. Aplikasi web akuntansi modern yang dirancang khusus untuk membantu usaha kecil dan menengah (UKM) di Indonesia mengelola keuangan mereka dengan mudah dan efisien. Finsera menggambarkan solusi finansial buatan anak bangsa yang modern dan relevan untuk bisnis di Indonesia.
 
 ## 📋 Deskripsi Umum
 
