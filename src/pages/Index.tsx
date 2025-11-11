@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { AppProvider } from '@/contexts/AppContext';
 import Sidebar from '@/components/Sidebar';
+import MobileHeader from '@/components/MobileHeader';
 import Dashboard from '@/components/Dashboard';
 import Produk from '@/components/Produk';
 import Kasir from '@/components/Kasir';
@@ -14,6 +15,7 @@ import { Toaster } from '@/components/ui/toaster';
 
 const Index = () => {
   const [activeTab, setActiveTab] = useState('dashboard');
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   const renderContent = () => {
     switch (activeTab) {
@@ -41,8 +43,16 @@ const Index = () => {
   return (
     <AppProvider>
       <div className="flex h-screen bg-gray-50 w-full">
-        <Sidebar activeTab={activeTab} setActiveTab={setActiveTab} />
-        <main className="flex-1 overflow-auto">
+        <MobileHeader onMenuClick={() => setIsSidebarOpen(true)} />
+        
+        <Sidebar 
+          activeTab={activeTab} 
+          setActiveTab={setActiveTab}
+          isOpen={isSidebarOpen}
+          onClose={() => setIsSidebarOpen(false)}
+        />
+        
+        <main className="flex-1 overflow-auto pt-16 md:pt-0 animate-fade-in">
           {renderContent()}
         </main>
       </div>
