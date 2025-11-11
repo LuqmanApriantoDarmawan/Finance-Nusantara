@@ -20,6 +20,17 @@ interface SidebarProps {
   onClose?: () => void;
 }
 
+const menuItems = [
+  { id: 'dashboard', label: 'Dashboard', icon: LayoutDashboard },
+  { id: 'produk', label: 'Produk', icon: Package },
+  { id: 'kasir', label: 'Kasir', icon: ShoppingCart },
+  { id: 'transaksi', label: 'Transaksi', icon: Receipt },
+  { id: 'pembelian', label: 'Pembelian', icon: ShoppingBag },
+  { id: 'beban', label: 'Beban & Pengeluaran', icon: ArrowDownCircle },
+  { id: 'jurnal', label: 'Jurnal', icon: TrendingUp },
+  { id: 'laporan', label: 'Laporan', icon: FileText },
+];
+
 const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab, isOpen = true, onClose }) => {
   const handleMenuClick = (tab: string) => {
     setActiveTab(tab);
@@ -27,16 +38,6 @@ const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab, isOpen = tru
       onClose();
     }
   };
-  const menuItems = [
-    { id: 'dashboard', label: 'Dashboard', icon: LayoutDashboard },
-    { id: 'produk', label: 'Produk', icon: Package },
-    { id: 'kasir', label: 'Kasir', icon: ShoppingCart },
-    { id: 'transaksi', label: 'Transaksi', icon: Receipt },
-    { id: 'pembelian', label: 'Pembelian', icon: ShoppingBag },
-    { id: 'beban', label: 'Beban & Pengeluaran', icon: ArrowDownCircle },
-    { id: 'jurnal', label: 'Jurnal', icon: TrendingUp },
-    { id: 'laporan', label: 'Laporan', icon: FileText },
-  ];
 
   return (
     <>
