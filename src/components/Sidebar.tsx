@@ -31,8 +31,8 @@ const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab }) => {
   return (
     <div className="w-64 bg-white shadow-lg h-full flex flex-col">
       <div className="p-6 border-b border-gray-200">
-        <h2 className="text-xl font-bold text-gray-800">Sistem Akuntansi</h2>
-        <p className="text-sm text-gray-600 mt-1">Indonesia</p>
+        <h2 className="text-xl font-bold text-gray-800">Finsera</h2>
+        <p className="text-sm text-gray-600 mt-1">Finance Nusantara</p>
       </div>
       
       <nav className="flex-1 p-4">
@@ -62,8 +62,8 @@ const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab }) => {
       
       <div className="p-4 border-t border-gray-200">
         <div className="text-center">
-          <p className="text-xs text-gray-500">© 2024 Sistem Akuntansi</p>
-          <p className="text-xs text-gray-400">Indonesia v1.0</p>
+          <p className="text-xs text-gray-500">© 2024 Finsera</p>
+          <p className="text-xs text-gray-400">Finance Nusantara v1.0</p>
         </div>
       </div>
     </div>
